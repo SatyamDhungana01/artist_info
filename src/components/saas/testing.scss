@@ -1,0 +1,56 @@
+$primaryColor: #eaeaea;
+$_oldSchoolColor: #006494;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  @include flex-center;
+  
+}
+.apiInsideContainer {
+  background: $primaryColor;
+  padding: 3em;
+  width: fit-content;
+  border-radius: 10px;
+  border: 1px solid #0202;
+  margin: 10px 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.apiInsideContainer:hover {
+  transform: scale(1.03);
+  color: $_oldSchoolColor;
+}
+.apiFlexContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.apiTextContainer {
+  margin: 0 15px;
+  width: 270px;
+}
+input {
+  border: 1px solid black;
+  width: 500px;
+  padding: 15px;
+  margin: 12px 10px;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: large;
+}
