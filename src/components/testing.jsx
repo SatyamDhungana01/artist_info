@@ -15,7 +15,7 @@ const options = {
 
 const Testing = () => {
     const [data, setData] = useState()
-    const [input, setInput] = useState()
+    const [input, setInput] = useState("")
     useEffect(() => {
         axios.request(options).then(function (response) {
             // console.log(response.data.response.songs);
@@ -27,9 +27,9 @@ const Testing = () => {
     console.log(data)
 
 
-    const openInNewTab = (url) => {
-        window.open(url, '_blank', 'noopener, noreferrer')
-    }
+    // const openInNewTab = (url) => {
+    //     window.open(url, '_blank', 'noopener, noreferrer')
+    // }
 
     // const handleChange = (e) => {
     //     e.preventDefault()
